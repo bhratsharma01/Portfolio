@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav>
+      <h1 class="logo">My Portfolio</h1>
+
+      <!-- Menu Toggle Button -->
+      <div class="menu-toggle">
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#techstack">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <h1>
+        <span class="hello">Hello,</span>
+        <span class="im">I'm</span>
+        <span class="name">Bhrat Sharma</span>
+      </h1>
+      <h2 class="role">I'm a <span id="changing-text"></span></h2>
+
+      <a href="resume.pdf" class="btn-cv" download>Download CV</a>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/bhratsharma" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card">
+        <img src="images/image.jpg" alt="My Photo" class="profile-img profile-animate">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate MERN Stack Developer with hands-on experience in React.js, Node.js, Express.js, and MongoDB, dedicated to building user-friendly, scalable, and high-performance web applications. With a Bachelor’s degree and a strong interest in full-stack development, I enjoy turning ideas into reality through clean code and creative problem-solving.
+    </p>
+    <p>
+      I specialize in crafting responsive, interactive front-end interfaces using modern JavaScript technologies, ensuring seamless user experiences across devices. My journey is fueled by continuous learning, keeping up with the latest trends in web development, and delivering real-world solutions through hands-on projects.
+    </p>
+    <p>
+      When I’m not coding, you’ll find me exploring new tech stacks, refining my skills, and brainstorming ways to make the web a better place — one application at a time.
+    </p>
+  </section>
+
+  <!-- ===== Tech Stack Section ===== -->
+  <section id="techstack" class="fade-in">
+    <h2>Tech Stack</h2>
+    <div class="tech-categories">
+      <!-- Languages -->
+      <div class="tech-card">
+        <h3>Languages</h3>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <i class="fa-solid fa-code"></i>
+            <span>C++</span>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Development Stack -->
+      <div class="tech-card">
+        <h3>Development Stack</h3>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item">
+            <i class="fas fa-server"></i>
+            <span>Express.js</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="tech-card">
+        <h3>Databases</h3>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <i class="fas fa-leaf"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <i class="fas fa-database"></i>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== ProjecT-Section ===== -->
+
+  <!-- ===== Project Section ===== -->
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project 1: PlantCure -->
+    <div class="project-card">
+      <!-- Image Slider -->
+      <div class="slider">
+        <div class="slides">
+          <img src="images/project1-1.png" alt="PlantCure Screenshot 1">
+          <img src="images/project1-2.png" alt="PlantCure Screenshot 2">
+          <img src="images/project1-3.png" alt="PlantCure Screenshot 3">
+        </div>
+      </div>
+
+      <h3>🌱 PlantCure – Plant Disease Detection & Remedy Finder</h3>
+      <p><strong>Tech Stack:</strong> MERN (MongoDB, Express.js, React.js, Node.js), CSS, Axios</p>
+      <p>
+        PlantCure is a full-stack web application that helps users identify plant diseases and find effective remedies.
+        Users can select the plant type, choose visible symptoms, and instantly get disease details with causes,
+        home remedies, and recommended medicines.
+      </p>
+      <ul style="text-align: left; margin-top: 10px;">
+        <li><b>Dynamic Plant & Symptom Lists</b> – Plant types and symptoms are fetched from the database dynamically.</li>
+        <li><b>Disease Diagnosis API</b> – Matches user-selected plant and symptoms to provide accurate disease details.</li>
+        <li><b>Responsive Frontend</b> – Developed using React.js and CSS for smooth, mobile-friendly user experience.</li>
+        <li><b>RESTful Backend</b> – Node.js + Express.js backend with MongoDB for storing plant disease data and remedies.</li>
+        <li><b>User-Friendly UI</b> – Simple navigation with instant data fetching using Axios.</li>
+      </ul>
+      <p><strong>Impact:</strong> Enables farmers, gardeners, and plant enthusiasts to detect plant diseases quickly and take timely preventive measures.</p>
+    </div>
+
+    <!-- Project 2 -->
+    <!-- Project 2: Online Examination System -->
+<div class="project-card">
+<div class="slider">
+        <div class="slides">
+          <img src="images/project2-1.png" alt="Online Examination System Screenshot 1">
+          <img src="images/project2-2.png" alt="Online Examination System Screenshot 2">
+          <img src="images/project2-3.png" alt="Online Examination System Screenshot 3">
+        </div>
+      </div>
+
+  <h3>📝 Online Examination System — Secure, Scalable, and Insightful</h3>
+  <p><strong>Tech Stack:</strong> MERN (MongoDB, Express.js, React.js, Node.js), JWT, Axios, Charting Library (e.g., Chart.js / Recharts), XLSX Export</p>
+
+  <p>
+    A full-stack web application for conducting online exams with robust authentication, a smooth testing experience, 
+    and rich analytics. It supports user & permission management, autosaves answers to survive refreshes, and generates 
+    clear, graph-based results. Admins can export results to Excel and collect post-exam feedback for continuous improvement. 
+    Built with a modular codebase for maintainability and fast iteration.
+  </p>
+
+  <ul style="text-align: left; margin-top: 10px;">
+    <li><b>JWT Authentication</b> — Protected routes, login, and role-based access.</li>
+    <li><b>User Management</b> — Students, examiners, and admins.</li>
+    <li><b>Permission Management</b> — Granular control over actions and data.</li>
+    <li><b>Modular Codebase</b> — Clean structure for easy scaling.</li>
+    <li><b>Test Portal with Persistence</b> — Answers remain saved on refresh.</li>
+    <li><b>Graph-Based Results</b> — Scores, section breakdowns, correctness trends.</li>
+    <li><b>One-Click Excel Export</b> — Download results instantly.</li>
+    <li><b>Feedback System</b> — Capture insights after exams.</li>
+  </ul>
+
+  <p><strong>Impact:</strong> Enables institutions to conduct secure, scalable exams while giving stakeholders actionable analytics and faster decision-making.</p>
+
+</div>
+
+
+  </div>
+</section>
+
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:bhratsharma615@gmail.com">bhratsharma615@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhratsharma">My LinkedIn</a></p>
+    <p>GitHub: <a href="https://github.com/bhratsharma01">My GitHub</a></p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Bhrat Sharma. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS Script -->
+ <script src="script.js"></script>
+</body>
+</html>
